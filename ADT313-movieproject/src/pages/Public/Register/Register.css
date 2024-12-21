@@ -1,48 +1,182 @@
-.main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
-  }
-  
-  .form-container {
-    padding: 4rem 2rem;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .form-container > div {
-    margin-bottom: 12px;
-  }
-  
-  .form-group {
-    display: flex;
-    margin-bottom: 10px;
-  }
-  
-  .form-group label {
-    width: 130px;
-    margin-right: 10px;
+.Register-Form {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: left;
-  }
-  .errors {
-    color: red;
-    font-size: 12px;
-  }
-  .submit-container {
-    margin-top: 12px;
+}
+
+.Register-Form h1.text-title {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.Register-Form p.text-description {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.Register-Form .box-form {
+    text-align: left;
+}
+
+.Register-Form .box-form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.error-display-register {
+    width: 100%;
+    height: 17px;
+    padding: 2px;
+}
+
+.Register-Form .box-form input[type="text"],
+.Register-Form .box-form input[type="email"],
+.Register-Form .box-form input[type="password"] {
+    width: calc(100% - 20px);
+    max-width: 500px;
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: border 0.3s;
+    text-align: left;
+}
+
+.Register-Form .box-form input:focus {
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 8px rgba(10, 10, 10, 0.5);
+}
+
+.Register-Form .form-check {
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.button-box-register {
     text-align: center;
-  }
-  .register-container {
-    text-align: center;
-  }
-  .show-password {
-    margin-bottom: 1rem;
+}
+
+.Register-Form .form-check .form-check-label {
+    font-size: 0.85rem;
+    color: #ffffff;
+}
+
+.Register-Form .btn {
+    width: 100%;
+    height: 50px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
     cursor: pointer;
-  }
-  
+    transition: background-color 0.2s;
+}
+
+.Register-Form .btn:hover {
+    background: linear-gradient(to right, #000, #000);
+    transform: translateY(-3px);
+}
+
+.Register-Form .btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+.Register-Form .text-center a {
+    font-size: 0.85rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.Register-Form .text-center a:hover {
+    color: #e50914;
+}
+
+.text-danger-register {
+    font-size: 0.85rem;
+    color: #ff4d4f;
+    text-align: left;
+    display: block;
+}
+
+.text-message-box-failed {
+    width: 100%;
+    height: 50px;
+    background-color: #ffa0a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: #ff4d4f solid 1px;
+    color: #ffffff;
+}
+
+.text-message-box-success {
+    width: 100%;
+    height: 50px;
+    background-color: #a0ffad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: #4dff74 solid 1px;
+    color: #ffffff;
+}
+
+@media (max-width: 500px) {
+    .Register-Form {
+        width: 300px;
+        height: auto;
+    }
+
+    .Register-Form h1.text-title {
+        font-size: 1.3rem;
+    }
+    
+    .Register-Form p.text-description {
+        font-size: 0.8rem;
+        color: #3d2424;
+        margin-bottom: 20px;
+    }
+    
+    .Register-Form .box-form label {
+        font-size: 1.0rem;
+        margin-top: -8px;
+    }
+    
+    .Register-Form .box-form input[type="text"],
+    .Register-Form .box-form input[type="email"],
+    .Register-Form .box-form input[type="password"] {
+        width: calc(100% - 10px);
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+    
+    .Register-Form .form-check label {
+        font-size: 0.75rem;
+        color: #666666;
+    }
+    
+    .Register-Form .text-center a:hover {
+        color: #6a11cb;
+    }
+
+    .text-danger-register {
+        font-size: 0.65rem;
+    }
+}
