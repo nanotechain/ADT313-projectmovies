@@ -113,7 +113,7 @@ function Register() {
           <h1 className="text-title"><strong>Sign Up</strong></h1>
           <p className="text-description"> Watch, Relax, Enjoy, Your New Addiction Awaits.</p>
           <form className='box-form'>
-            <label htmlFor="firstName">First Name:</label>
+            
             <input
               type="text"
               id="firstName"
@@ -121,14 +121,13 @@ function Register() {
               ref={firstNameRef}
               onChange={(e) => handleOnChange(e, 'firstName')}
               required
+              placeholder="First Name"
             />
             <div className='error-display-register'>
               {debounceState && isFieldsDirty && firstName === '' && (
                 <strong className="text-danger-register">This field is required</strong>
               )}
             </div>
-
-            <label htmlFor="middleName">Middle Name:</label>
             <input
               type="text"
               id="middleName"
@@ -136,6 +135,7 @@ function Register() {
               ref={middleNameRef}
               onChange={(e) => handleOnChange(e, 'middleName')}
               required
+              placeholder="Middle Name"
             />
             <div className='error-display-register'>
               {debounceState && isFieldsDirty && middleName === '' && (
@@ -143,7 +143,6 @@ function Register() {
               )}
             </div>
 
-            <label htmlFor="lastName">Last Name:</label>
             <input
               type="text"
               id="lastName"
@@ -151,6 +150,7 @@ function Register() {
               ref={lastNameRef}
               onChange={(e) => handleOnChange(e, 'lastName')}
               required
+              placeholder="Last Name"
             />
             <div className='error-display-register'>
               {debounceState && isFieldsDirty && lastName === '' && (
@@ -158,7 +158,7 @@ function Register() {
               )}
             </div>
             
-            <label htmlFor="contactNo">Contact Number:</label>
+            
             <input
               type="text"
               id="contactNo"
@@ -166,6 +166,7 @@ function Register() {
               ref={contactNoRef}
               onChange={(e) => handleOnChange(e, 'contactNo')}
               required
+              placeholder="Contact Number"
             />
             <div className='error-display-register'>
               {debounceState && isFieldsDirty && contactNo === '' && (
@@ -173,7 +174,6 @@ function Register() {
               )}
             </div>
 
-            <label htmlFor="email">Email:</label>
             <input
               type="email"
               id="email"
@@ -181,6 +181,7 @@ function Register() {
               ref={emailRef}
               onChange={(e) => handleOnChange(e, 'email')}
               required
+              placeholder="Email"
             />
             <div className='error-display-register'>
               {debounceState && isFieldsDirty && email === '' && (
@@ -188,7 +189,6 @@ function Register() {
               )}
             </div>
 
-            <label htmlFor="password">Password:</label>
             <input
               type={isShowPassword ? 'text' : 'password'}
               id="password"
@@ -196,6 +196,7 @@ function Register() {
               ref={passwordRef}
               onChange={(e) => handleOnChange(e, 'password')}
               required
+              placeholder="Password"
             />
             <div className='error-display-register'>
               {debounceState && isFieldsDirty && password === '' && (

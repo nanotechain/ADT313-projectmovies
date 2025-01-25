@@ -110,7 +110,7 @@ function Movie() {
           ) : (
             <div className="Slider-Color">
               <h1 className="Tab-Viewer-h1">Cast & Crew</h1>
-              <p className="not-found-message">No cast here? I think they have on Vacation...🏝️🍹⛱️🌊</p>
+              <p className="not-found-message">No cast here? Lets find out.</p>
             </div>
           )}
 
@@ -134,7 +134,7 @@ function Movie() {
           ) : (
             <div className="Slider-Color">
               <h1 className="Tab-Viewer-h1">Videos</h1>
-              <p className="not-found-message">No videos yet. We will taking a video at this moment.📽️▶️</p>
+              <p className="not-found-message">No video. Lets find out</p>
             </div>
           )}
 

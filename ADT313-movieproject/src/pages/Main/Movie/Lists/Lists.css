@@ -36,7 +36,8 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-    background-color: #6c757d;
+    background-color: #495057;
+    cursor: pointer;
 }
 
 .btn {
@@ -46,7 +47,10 @@ tr:hover {
     border-radius: 0.25rem;
     cursor: pointer;
 }
-
+.btn:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
 .btn-primary, .btn-top {
     padding: 0.375rem 0.75rem;
     font-size: 0.875rem;
@@ -127,4 +131,17 @@ hr {
 
 .text-center {
     text-align: center;
+}
+@media (max-width: 768px) {
+    .btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    .d-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+    thead th {
+        font-size: 0.75rem;
+    }
 }
